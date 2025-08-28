@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free Fire Esports – Team Builder</title>
+<style>
+  :root{
+    --bg:#0f172a;
+    --card:#111827;
+    --muted:#94a3b8;
+    --text:#e5e7eb;
+    --brand:#22d3ee;
+    --accent:#a78bfa;
+    --ok:#34d399;
+    --warn:#f59e0b;
+    --bad:#f43f5e;
+    --chip:#1f2937;
+    --border:#1f2937;
+  }
+
+  *{box-sizing:border-box;}
+  html, body {
+    margin:0; padding:0; height:100%;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    overflow-x: hidden;
+  }
+
+  header{
+    position: sticky;
+    top:0; z-index: 100;
+    backdrop-filter: blur(10px);
+    background: rgba(15,23,42,0.9);
+    border-bottom:1px solid var(--border);
+  }
+
+  .nav{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; padding:10px 24px; gap:10px}
+  .brand{display:flex; align-items:center; gap:12px}
+  .logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--accent));box-shadow:0 0 30px rgba(34,211,238,.35);}
+  .title{font-weight:800;}
+  .toc{display:flex; flex-wrap:wrap; gap:10px; max-width:calc(100% - 180px);}
+  .chip{padding:8px 12px; border-radius:999px; background:var(--chip); border:1px solid var(--border); color:var(--muted); font-size:14px; cursor:pointer;}
+  .chip:hover{color:var(--text); border-color:var(--accent);}
+
+  main{height: calc(100vh - 60px); overflow-y: auto; padding: 24px;}
+  .card{background:var(--card); border-radius:16px; padding:18px; margin-bottom:16px; border:1px solid var(--border);}
+  h1,h2,h3{margin:0 0 10px;}
+  p, ul, ol{margin:0 0 10px;}
+  ul, ol{padding-left:18px;}
+  .split{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:10px;}
+  @media (max-width:900px){ .split{grid-template-columns:1fr;} .toc{max-width:100%;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <div class="logo"></div>
+      <div class="title">Free Fire Esports – Team Builder</div>
+    </div>
+    <div class="toc">
+      <a class="chip" href="#overview">Overview</a>
+      <a class="chip" href="#roles">Team Roles</a>
+      <a class="chip" href="#scouting">Scouting</a>
+      <a class="chip" href="#practice">Practice Plan</a>
+      <a class="chip" href="#macro">Macro</a>
+      <a class="chip" href="#micro">Micro</a>
+      <a class="chip" href="#loadout">Loadouts</a>
+      <a class="chip" href="#maps">Maps</a>
+      <a class="chip" href="#comms">Comms</a>
+      <a class="chip" href="#vod">VOD & Analytics</a>
+      <a class="chip" href="#tournament">Tournament</a>
+      <a class="chip" href="#health">Culture</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="overview" class="card">
+    <h1>Free Fire Esports টিম বানানোর A–Z গাইড</h1>
+    <p>রাইট রোলে রাইট প্লেয়ার + ডিসিপ্লিন + ড্রিল + ক্লিয়ার কমিউনিকেশন = কনসিসটেন্ট টপ ৩। এই পেজে থাকছে টিম স্ট্রাকচার, রিক্রুটিং, ডেইলি প্র্যাকটিস, স্ট্র্যাটেজি, ম্যাপ প্ল্যান, টুর্নামেন্ট প্রেপ।</p>
+  </section>
+
+  <section id="roles" class="card">
+    <h2>Team Roles</h2>
+    <div class="split">
+      <div>
+        <h3>IGL</h3>
+        <ul><li>ড্রপ প্ল্যান, রোটেশন টাইমিং</li></ul>
+      </div>
+      <div>
+        <h3>Rusher</h3>
+        <ul><li>ফাস্ট এন্ট্রি, ট্রেড ফোর্স</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="scouting" class="card">
+    <h2>Scouting</h2>
+    <p>Tryouts, Stat tracking, ভাইব চেক।</p>
+  </section>
+
+  <section id="practice" class="card">
+    <h2>Practice Plan</h2>
+    <p>Daily 90-120min, Weekly VOD review, Custom matches।</p>
+  </section>
+
+  <section id="macro" class="card">
+    <h2>Macro Strategy</h2>
+    <p>Drop plan, rotations, late game positioning।</p>
+  </section>
+</main>
+
+</body>
+</html>
